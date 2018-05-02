@@ -1,11 +1,25 @@
+print "Enter your name: "
+
+myname = gets.chomp
+
+puts "Hello #{myname}"
+
+
 print "Enter your salary: "
-s = gets.to_f
 
-puts "Salary"
-puts "#{s}" #коммент
+salary = gets.to_f
 
-puts "Tax"
-puts 0.40
+print "The tax: "
 
-puts "Final"
-puts s - s * 0.40 #bug fixed
+tax = gets.to_f
+           
+final = salary - (salary * tax)
+                             
+print "Final: "
+
+puts final
+
+print "Annual salary: "
+
+puts final * 12
+
